@@ -1,0 +1,8 @@
+<html>
+  <h1>Nomad Jobspec Repo</h1>
+  <ul>
+    {% for job in jobs %}
+        <li><a href="/jobs/{{ job.name }}">{{ job.name }}</a></li>
+    {% endfor %}
+  </ul>
+</html>
