@@ -14,4 +14,4 @@ RUN . /opt/venv/bin/activate && \
 
 COPY nomadrepo nomadrepo
 CMD . /opt/venv/bin/activate && \
-    exec python nomadrepo/manage.py runserver
+    exec python nomadrepo/manage.py runserver --insecure 0.0.0.0:8000
