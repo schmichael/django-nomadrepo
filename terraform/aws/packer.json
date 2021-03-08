@@ -31,11 +31,6 @@
     "destination": "/ops"
   },
   {
-    "type": "file",
-    "source": "../examples",
-    "destination": "/ops"
-  },
-  {
     "type": "shell",
     "script": "../shared/scripts/setup.sh"
   }]
