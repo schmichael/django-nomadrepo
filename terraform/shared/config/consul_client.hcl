@@ -6,6 +6,9 @@ advertise_addr = "{{ GetPrivateIP }}"
 ports {
   grpc = 8502
 }
+connect {
+  enabled = true
+}
 
 ui = true
 
