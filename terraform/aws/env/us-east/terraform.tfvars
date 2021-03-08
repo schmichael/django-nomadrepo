@@ -30,7 +30,9 @@ key_name = "schmichael"
 #ami = "ami-060f377324a7e29cd"
 #ami = "ami-0a2b853a41fe16274"
 #ami = "ami-05f98fecb1d40b65a"
-ami = "ami-0a5362e4fe4158f2a"
+#ami = "ami-0a5362e4fe4158f2a"
+#ami = "ami-0ce26252291aac330"
+ami = "ami-05dc6908436e6d119"
 
 # `server_instance_type` ("t2.medium"), `client_instance_type` ("t2.medium"),
 # `server_count` (3),`client_count` (4) - These options control instance size
