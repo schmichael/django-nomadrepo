@@ -8,7 +8,7 @@ job "nomadrepo" {
 
     service {
       name = "nomadrepodb"
-      port = 5432
+      port = "5432"
 
       connect {
         sidecar_service {}
@@ -46,7 +46,7 @@ job "nomadrepo" {
 
     service {
       name = "nomadrepofe"
-      port = 8000
+      port = "8000"
 
       connect {
         sidecar_service {
@@ -63,7 +63,7 @@ job "nomadrepo" {
     task "frontend" {
       driver = "docker"
       config {
-        image = "schmichael/nomadrepo:0.1"
+        image = "schmichael/nomadrepo:0.5"
       }
 
       resources {
@@ -89,7 +89,9 @@ job "nomadrepo" {
 #!/bin/sh
 
 echo "--> Waiting for envoy to start..."
-sleep 10
+sleep 15
+# Use alloc index as jitter
+sleep {{ env "NOMAD_ALLOC_INDEX" }}
 
 echo "--> Initializing database..."
 PGPASSWORD=nomadrepo9000 psql -h localhost -U postgres -c 'CREATE DATABASE nomadrepo;' || echo "Error code: $?"
