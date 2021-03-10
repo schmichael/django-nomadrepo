@@ -9,8 +9,6 @@ name = "nomad"
 
 # If it is not provided here, it will be requested interactively.
 #key_name = "«YOUR EC2 SSH KEY NAME»"
-# REMOVE
-key_name = "schmichael"
 
 # `nomad_binary` (optional, null) - URL of a zip file containing a nomad
 # executable with which to replace the Nomad binaries in the AMI.
@@ -23,15 +21,6 @@ key_name = "schmichael"
 # `ami` (required) - The base AMI for the created nodes, This AMI must exist in
 # the requested region for this environment to build properly.
 #  - If it is not provided here, it will be requested interactively.
-## Old? Remove?
-#ami = "ami-09730698a875f6abd"
-#ami = "ami-01fe1a82401a5c4b8"
-#ami = "ami-096ec5560f4d61b3b"
-#ami = "ami-060f377324a7e29cd"
-#ami = "ami-0a2b853a41fe16274"
-#ami = "ami-05f98fecb1d40b65a"
-#ami = "ami-0a5362e4fe4158f2a"
-#ami = "ami-0ce26252291aac330"
 ami = "ami-05dc6908436e6d119"
 
 # `server_instance_type` ("t2.medium"), `client_instance_type` ("t2.medium"),

@@ -1,6 +1,11 @@
 # Nomad Job Repo in Django
 
-Just a demo app
+Just a demo app.
+
+See `nomadrepo.nomad` for the Nomad jobspec.
+
+If you have an AWS account, run `terraform` in the `terraform/env/us-east`
+directory.
 
 ## Local Development
 
